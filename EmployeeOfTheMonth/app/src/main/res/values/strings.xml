@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EmployeeOfTheMonth</string>
+    <string name="employeeName" />
+    <string name="my_image_description" />
+</resources>

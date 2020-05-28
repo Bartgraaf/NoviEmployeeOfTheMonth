@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controllers.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/my_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="150pt"
+            android:adjustViewBounds="true"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/welcomeScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="80pt">
+
+        <Button
+            android:id="@+id/prevGadget"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10pt"
+            android:text="Vorige gadget"/>
+
+        <Button
+            android:id="@+id/nextGadget"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:text="Volgende gadget" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/nextStepContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingTop="200pt"
+        android:paddingBottom="10pt">
+        <Button
+            android:id="@+id/applyGadget"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:text="Pas gadget toe" />
+        <Button
+            android:id="@+id/nextStepSend"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Volgende stap" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
